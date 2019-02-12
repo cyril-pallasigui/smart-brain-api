@@ -12,7 +12,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host : '127.0.0.1', // 127.0.0.1 = localhost (home)
+    host : 'postgresql-pointy-85577', // this is the add-on when you do "heroku pg:info"
     user : 'postgres',
     password : 'test',
     database : 'smart-brain'
