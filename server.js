@@ -17,6 +17,16 @@ const db = knex({
   }
 });
 
+// const db = knex({
+//   client: 'pg',
+//   connection: {
+//     host : 'localhost',
+//     user : 'cyrilpal_admin',
+//     password : 'admin123',
+//     database : 'cyrilpal_smartbrain'
+//   }
+// });
+
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
